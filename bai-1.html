@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+
+<script>
+    // Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau.
+    // Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+    // Sau khi thực thi chương trình sẽ trả về dạng như sau :
+    //
+    //     "Red,Green,White,Black"
+
+    let n = parseInt(prompt('Nhập số phần từ:'));
+    let arr = [];
+
+    for (let i =0; i<n; i++){
+        arr[i] = prompt('Nhập phần tử thứ '+ i + ': ');
+    }
+
+    let str='';
+    let delim=',';
+    for (let i = 0; i<n-1; i++){
+        str+=arr[i]+delim;
+    }
+    str+=arr[n-1];
+    alert('Mảng bạn vừa nhập là: '+str);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+
+<script>
+    // Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn.
+    //     Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
+
+    let number = prompt('Nhập vào số nguyên n:');
+    let result = '';
+
+    for (let i = 0; i < number.length - 1; i++) {
+        result += number[i];
+        if (number[i] % 2 === 0 && number[i + 1] % 2 === 0) {
+            result += '-';
+        }
+    }
+    result += number[number.length - 1];
+    alert('Kết quả: ' + result);
+
+</script>
+</body>
+</html>
